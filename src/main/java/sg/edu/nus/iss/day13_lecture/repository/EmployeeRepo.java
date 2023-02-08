@@ -57,4 +57,11 @@ public class EmployeeRepo {
         }
         return result; 
     }    
+
+    // (4) function to find record by email address
+    public Employee findByEmailId(String email) {
+        Employee emp = employees.stream().filter(e -> e.getEmail().equalsIgnoreCase(email)).findFirst().get(); 
+
+        return emp; 
+    }
 }
