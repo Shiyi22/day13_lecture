@@ -49,15 +49,15 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String firstName, String lastName, String address, String email, String phoneNo, Integer salary,
-            Date birthDay, Integer postalCode) {
+    public Employee(String firstName, String lastName, String email, String phoneNo, Integer salary,
+            Date birthDay,  String address, Integer postalCode) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.address = address;
         this.email = email;
         this.phoneNo = phoneNo;
         this.salary = salary;
         this.birthDay = birthDay;
+        this.address = address;
         this.postalCode = postalCode;
     }
 
